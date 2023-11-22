@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Event Listeners</title>
+</head>
+<body>
+    <button id="myElement">Click me</button>
+
+    <script>
+        // Завдання 5: Використання addEventListener
+        var myElement = document.getElementById("myElement");
+
+        function firstHandler() {
+            console.log("Подія виникла!");
+        }
+
+        function secondHandler() {
+            console.log("Ще один обробник події!");
+        }
+
+        myElement.addEventListener("click", firstHandler);
+        myElement.addEventListener("click", secondHandler);
+    </script>
+</body>
+</html>
